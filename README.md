@@ -33,6 +33,5 @@ So, the list will always contain the top k predictions. In the end, we take the 
 
 ![1](https://user-images.githubusercontent.com/44580998/80075158-e34fb980-8567-11ea-8cb8-30629f4263d4.PNG)
 ![2](https://user-images.githubusercontent.com/44580998/80075165-e77bd700-8567-11ea-98d5-3fb52e9fd3f5.PNG)
-![3](https://user-images.githubusercontent.com/44580998/80075118-d16e1680-8567-11ea-99f4-151ab18241c7.PNG)
 ![4](https://user-images.githubusercontent.com/44580998/80075130-d6cb6100-8567-11ea-8efc-e6ef755341c3.PNG)
 ![5](https://user-images.githubusercontent.com/44580998/80075141-da5ee800-8567-11ea-8d66-7988b4e26ba8.PNG)

@@ -19,8 +19,11 @@ I have done image captioning on it.  In this i used a CNN to extract the feature
 
 For creating the model, the captions has to be put in an embedding. I used Word2Vec to get the pre-trained embedding weights of vocabulary,. So, I took some ideas from it by setting the embedding size to 300. The image below is the model that I used.
 
-![1](https://user-images.githubusercontent.com/44580998/80075158-e34fb980-8567-11ea-8cb8-30629f4263d4.PNG)
 I explored VGG-16, Resnet-50 also . Vgg16 has almost 134 million parameters and its top-5 error on Imagenet is 7.3%. InceptionV3 has 21 million parameters and its top-5 error on Imagenet is 3.46%.  So i decided to continue with it.
+
+
+![0 1](https://user-images.githubusercontent.com/44580998/80075152-e0ed5f80-8567-11ea-96ca-2204b800804f.PNG)
+
 
 I have used beam seach Beam Search is where we take top k predictions, feed them again in the model and then sort them using the probabilities returned by the model.
 

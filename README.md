@@ -29,13 +29,3 @@ Pneumonia Results via sementic search using attention mechanism
 ![Capture](https://user-images.githubusercontent.com/44580998/107186177-c8243c80-6a09-11eb-8128-c1136203dc48.JPG)
 
 
-
-
-
-
-
-Normal testing Images
-![1](https://user-images.githubusercontent.com/44580998/80075158-e34fb980-8567-11ea-8cb8-30629f4263d4.PNG)
-![2](https://user-images.githubusercontent.com/44580998/80075165-e77bd700-8567-11ea-98d5-3fb52e9fd3f5.PNG)
-![4](https://user-images.githubusercontent.com/44580998/80075130-d6cb6100-8567-11ea-8efc-e6ef755341c3.PNG)
-![5](https://user-images.githubusercontent.com/44580998/80075141-da5ee800-8567-11ea-8d66-7988b4e26ba8.PNG)

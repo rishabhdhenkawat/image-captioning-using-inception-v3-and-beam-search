@@ -5,8 +5,6 @@
 
 ## Dataset
 
-I have used Flickr8k dataset (size 1 GB). MS-COCO, OpenImages and Flickr30K are other datasets that you can use. Flickr8K has 6000 training images, 1000 validation images and 1000 testing images. Each image has 5 captions describing it.
-
 ## Image feature extraction
 
 ![0](https://user-images.githubusercontent.com/44580998/80075155-e2b72300-8567-11ea-8e73-dd5e092cd040.jpg)

@@ -1,31 +1,24 @@
-#
-# Image Captioning using InceptionV3 and Beam
+This is a Image Search powered by Tensorflow Deep Learning. Images will be recognized by Image
+Captioning Neural Networks together with Semantic Segmentation Neural
+Networks. Every Image uploaded to the S3E will be analyzed by Deep
+Neural Networks to generate labels through Variational Auto Encoders
+and then generate annotations and metadata about images through Image
+Captioning Neural Networks via attention mechanism with tensorflow
 
-## Image Captioning is the process of **generating textual description of an image**. It uses both Natural Language Processing and Computer Vision to generate the captions. The dataset will be in the form [image → captions].
+The problem with normal method is that, when the model is trying to generate the next word of the caption, this word is usually describing only a part of the image. It is unable to capture the essence of the entire input image. Using the whole representation of the image h to condition the generation of each word cannot efficiently produce different words for different parts of the image.This is exactly where an Attention mechanism is helpful.
 
-## Dataset
+With an Attention mechanism, the image is first divided into n parts, and we compute with a Convolutional Neural Network (CNN) representations of each part h1,…, hn. When the RNN is generating a new word, the attention mechanism is focusing on the relevant part of the image, so the decoder only uses specific parts of the image.
 
-## Image feature extraction
+Image Captioning using Attention Mechanism
 
-![0](https://user-images.githubusercontent.com/44580998/80075155-e2b72300-8567-11ea-8e73-dd5e092cd040.jpg)
+We can recognize the figure of the “classic” model for image captioning, but with a new layer of attention model. What is happening when we want to predict the new word of the caption? If we have predicted i words, the hidden state of the LSTM is hi. We select the « relevant » part of the image by using hi as the context. Then, the output of the attention model zi, which is the representation of the image filtered such that only the relevant parts of the image remains, is used as an input for the LSTM. Then, the LSTM predicts a new word and returns a new hidden state hi+1.
 
-This image is taken from the slides Recurrent Neural Networks, Image Captioning and LSTM taught by Andrej Karpathy.
+Types of Attention Mechanism tested :
 
-I have done image captioning on it.  In this i used a CNN to extract the features from an image which is then along with the captions is fed into an LSTM. To extract the features, I used a model trained on Imagenet.
+Attention could be broadly differentiated into 2 types:
+Global Attention(Luong’s Attention): Attention is placed on all source positions.
+Local Attention(Bahdanau Attention): Attention is placed only on a few source positions.
 
-## Training and Hyperparameters
-
-For creating the model, the captions has to be put in an embedding. I used Word2Vec to get the pre-trained embedding weights of vocabulary,. So, I took some ideas from it by setting the embedding size to 300. The image below is the model that I used.
-
-I explored VGG-16, Resnet-50 also . Vgg16 has almost 134 million parameters and its top-5 error on Imagenet is 7.3%. InceptionV3 has 21 million parameters and its top-5 error on Imagenet is 3.46%.  So i decided to continue with it.
-
-
-![0 1](https://user-images.githubusercontent.com/44580998/80075152-e0ed5f80-8567-11ea-96ca-2204b800804f.PNG)
-
-
-I have used beam seach Beam Search is where we take top k predictions, feed them again in the model and then sort them using the probabilities returned by the model.
-
-So, the list will always contain the top k predictions. In the end, we take the one with the highest probability .But we can aslo go with Argmax search.
 
 # **Results**
 Pneumonia Results via sementic search using attention mechanism

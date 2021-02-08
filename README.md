@@ -30,6 +30,19 @@ I have used beam seach Beam Search is where we take top k predictions, feed them
 So, the list will always contain the top k predictions. In the end, we take the one with the highest probability .But we can aslo go with Argmax search.
 
 # **Results**
+Pneumonia Results via sementic search using attention mechanism
+
+![2](https://user-images.githubusercontent.com/44580998/107186170-c5c1e280-6a09-11eb-83f7-8de40b7df2a5.JPG)
+![3](https://user-images.githubusercontent.com/44580998/107186172-c6f30f80-6a09-11eb-8fe8-3ef22f96d4bf.JPG)
+![4](https://user-images.githubusercontent.com/44580998/107186176-c78ba600-6a09-11eb-8aa6-b1bc0b6857eb.JPG)
+![Capture](https://user-images.githubusercontent.com/44580998/107186177-c8243c80-6a09-11eb-8128-c1136203dc48.JPG)
+
+
+
+
+
+
+
 
 ![1](https://user-images.githubusercontent.com/44580998/80075158-e34fb980-8567-11ea-8cb8-30629f4263d4.PNG)
 ![2](https://user-images.githubusercontent.com/44580998/80075165-e77bd700-8567-11ea-98d5-3fb52e9fd3f5.PNG)

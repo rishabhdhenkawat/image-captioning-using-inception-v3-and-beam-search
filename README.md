@@ -15,7 +15,6 @@ We can recognize the figure of the “classic” model for image captioning, but
 
 Types of Attention Mechanism tested :
 
-Attention could be broadly differentiated into 2 types:
 Global Attention(Luong’s Attention): Attention is placed on all source positions.
 Local Attention(Bahdanau Attention): Attention is placed only on a few source positions.
 
